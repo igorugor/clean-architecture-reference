@@ -1,8 +1,9 @@
+using Articles.AppServices.Contexts.Articles.Repositories;
 using Articles.Contracts.Articles;
 
 namespace Articles.AppServices.Contexts.Articles.Services;
 
-public class ArticleService : IArticleService
+public class ArticleService(IArticleRepository articleRepository) : IArticleService
 {
     public Task<IReadOnlyCollection<ArticleDto>> GetByFilterAsync(ArticleFilterDto filter)
     {
@@ -19,7 +20,7 @@ public class ArticleService : IArticleService
         throw new NotImplementedException();
     }
 
-    public Task<ArticleDto> UpdateAsync(ArticleDto article)
+    public Task<ArticleDto> UpdateAsync(UpdateArticleDto article)
     {
         throw new NotImplementedException();
     }

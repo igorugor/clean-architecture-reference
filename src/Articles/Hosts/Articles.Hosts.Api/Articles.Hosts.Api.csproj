@@ -11,7 +11,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Infrastructure\Articles.Infrastructure.ComponentRegister\Articles.Infrastructure.ComponentRegister.csproj" />
+        <ProjectReference Include="..\..\Infrastructure\Articles.Infrastructure.ComponentRegister\Articles.Infrastructure.ComponentRegister.csproj"/>
+        <ProjectReference Include="..\..\Infrastructure\Articles.Infrastructure\Articles.Infrastructure.csproj"/>
     </ItemGroup>
 
 </Project>
